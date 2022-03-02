@@ -22,6 +22,14 @@
 
 <p id="result"> </p><br><br>
 
+<hr>
+
+<div>
+    click on image <br>
+    <img id="image" onclick="swapImage()" src="images/troupial.jpg" alt="troupial" width="200"; height="200">
+</div>
+
+
 
 <script> 
 
@@ -51,7 +59,20 @@ function resolveForm (){
         out.innerHTML = "Values were not confirmed"
     }
 }
+
+
+function swapImage(){
+    switch (useImage){
+        case 1: document.getElementById('image').src="images/troupial.jpg";useImage++;break;
+        case 2: document.getElementById('image').src="images/nightingle.jpg";useImage++;break;
+        case 3: document.getElementById('image').src="images/PygmyTyrant.jpg";useImage=1;break;
+
+
+    }
+}
 </script>
+
+
 
 </body>
 </html> 
