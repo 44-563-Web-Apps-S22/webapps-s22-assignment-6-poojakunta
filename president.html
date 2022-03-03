@@ -42,11 +42,22 @@ function checkGuess(){
     }
     else{
         wrong++
+        streak++
+        if(streak==3)
+        {
+            alert('sorry, game over.!! play again')
+            playagain()
+        }
+        else{
         alert('Oops!! Wrong President')
+        }
     }
   document.getElementById("result").innerHTML="Correct :"+correct+" wrong :"+wrong
 }
-
+function playagain()
+{
+    location.reload()
+}
 function resolveForm (){
     console.log("Getting form values")
     age = document.getElementById("form1_age").value
