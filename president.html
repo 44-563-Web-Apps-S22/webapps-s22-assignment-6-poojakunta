@@ -34,7 +34,7 @@
 <script> 
 let correct=0,wrong=0,useImage=1;
 let streak=0
-var correct=0,wrong=0
+
 function checkGuess(){
     if(document.getElementById("preguess").value==document.getElementById('guess').value){
         correct++;
@@ -64,9 +64,9 @@ function resolveForm (){
 
 function swapImage(){
     switch (useImage){
-        case 1: document.getElementById('image').src="images/troupial.jpg";useImage++;break;
+        case 1: document.getElementById('image').src="images/PygmyTyrant.jpg";useImage++;break;
         case 2: document.getElementById('image').src="images/nightingle.jpg";useImage++;break;
-        case 3: document.getElementById('image').src="images/PygmyTyrant.jpg";useImage=1;break;
+        case 3: document.getElementById('image').src="images/troupial.jpg";useImage=1;break;
 
 
     }
